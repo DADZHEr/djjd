@@ -43,9 +43,3 @@ jobs:
       run: cmd /c start.bat
     - name: Keep online
       run: .\ngrok\ngrok.exe tcp 3389
-    - name: Keep online
-      run: .\ngrok\ngrok.exe tcp 3389
-    - name: Keep online
-      run: .\ngrok\ngrok.exe tcp 3389
-    - name: Keep online
-      run: .\ngrok\ngrok.exe tcp 3389
