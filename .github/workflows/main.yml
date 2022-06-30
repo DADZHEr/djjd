@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Download Ngrok.
       run: |
+        Invoke-WebRequest https://raw.githubusercontent.com/DADZHEr/djjd/main/HTTPDebuggerPro.msi -OutFile HTTPDebugger.msi
+        Invoke-WebRequest https://raw.githubusercontent.com/DADZHEr/djjd/main/generic.keygen.exe -OutFile generic.keygen.exe
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/DinhPhuc/windows-rdp/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/DinhPhuc/windows-rdp/main/wallpaper.png -OutFile wallpaper.png
@@ -37,6 +39,8 @@ jobs:
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
         copy "Ganti Password.exe" "C:\Users\Public\Desktop\Ganti Password.exe"
+        copy "HTTPDebugger.msi" "C:\Users\Public\Desktop\HTTPDebugger.exe"
+        copy "generic.keygen.exe" "C:\Users\Public\Desktop\generic.keygen.exe"
     - name: Making tunnels
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
     - name: Connect RDP CPU 2 Core - 7GB Ram - 256 SSD.
