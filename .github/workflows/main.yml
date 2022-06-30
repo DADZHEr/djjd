@@ -39,7 +39,7 @@ jobs:
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
         copy "Ganti Password.exe" "C:\Users\Public\Desktop\Ganti Password.exe"
-        copy "HTTPDebugger.msi" "C:\Users\Public\Desktop\HTTPDebugger.exe"
+        copy "HTTPDebugger.msi" "C:\Users\Public\Desktop\HTTPDebugger.msi"
         copy "generic.keygen.exe" "C:\Users\Public\Desktop\generic.keygen.exe"
     - name: Making tunnels
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
